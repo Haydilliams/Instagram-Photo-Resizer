@@ -14,6 +14,7 @@
 		D795A1162018DEFF00A570C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D795A1142018DEFF00A570C1 /* LaunchScreen.storyboard */; };
 		D795A1212018DEFF00A570C1 /* HorizontalSquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795A1202018DEFF00A570C1 /* HorizontalSquareTests.swift */; };
 		D795A12C2018DEFF00A570C1 /* HorizontalSquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795A12B2018DEFF00A570C1 /* HorizontalSquareUITests.swift */; };
+		D795A13A2019165900A570C1 /* UIImageBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D795A1392019165900A570C1 /* UIImageBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D795A1272018DEFF00A570C1 /* HorizontalSquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorizontalSquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D795A12B2018DEFF00A570C1 /* HorizontalSquareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSquareUITests.swift; sourceTree = "<group>"; };
 		D795A12D2018DEFF00A570C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D795A1392019165900A570C1 /* UIImageBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				D795A10B2018DEFF00A570C1 /* AppDelegate.swift */,
 				D795A10D2018DEFF00A570C1 /* ViewController.swift */,
+				D795A1392019165900A570C1 /* UIImageBorder.swift */,
 				D795A10F2018DEFF00A570C1 /* Main.storyboard */,
 				D795A1122018DEFF00A570C1 /* Assets.xcassets */,
 				D795A1142018DEFF00A570C1 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D795A13A2019165900A570C1 /* UIImageBorder.swift in Sources */,
 				D795A10E2018DEFF00A570C1 /* ViewController.swift in Sources */,
 				D795A10C2018DEFF00A570C1 /* AppDelegate.swift in Sources */,
 			);
@@ -429,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C86CGZW29D;
 				INFOPLIST_FILE = HorizontalSquare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HaydenWilliams.HorizontalSquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C86CGZW29D;
 				INFOPLIST_FILE = HorizontalSquare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HaydenWilliams.HorizontalSquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
