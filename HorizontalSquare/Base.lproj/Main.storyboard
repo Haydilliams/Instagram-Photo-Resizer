@@ -27,22 +27,31 @@
                                     <constraint firstAttribute="width" constant="300" id="tGv-1C-GbX"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="rIn-Z6-Agb">
-                                <rect key="frame" x="82" y="460" width="212" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="rIn-Z6-Agb">
+                                <rect key="frame" x="68.5" y="460" width="239" height="36"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-7z-uci">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="30"/>
-                                        <state key="normal" title="Upload Photo"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="63" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Upload"/>
                                         <connections>
                                             <action selector="uploadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mG3-F2-kqw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDq-gT-vM7">
-                                        <rect key="frame" x="134" y="0.0" width="78" height="30"/>
-                                        <state key="normal" title="Save Photo"/>
+                                        <rect key="frame" x="108" y="0.0" width="43" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Crop"/>
                                         <connections>
-                                            <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UTa-Vk-lIs"/>
-                                            <action selector="uploadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fyk-u8-Xyc"/>
+                                            <action selector="cropButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOd-Tu-xKg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-ql-oZT">
+                                        <rect key="frame" x="196" y="0.0" width="43" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNT-V5-Ae6"/>
                                         </connections>
                                     </button>
                                 </subviews>

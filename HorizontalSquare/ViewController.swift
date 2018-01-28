@@ -26,20 +26,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func saveButtonPressed(_ sender: Any) {
         
         if let image = imageView.image {
-            let newImage = image.addBorderToImage()
-            
-            UIView.transition(with: self.imageView,
-                duration: 0.5,
-                options: .transitionCrossDissolve,
-                animations: { self.imageView.image = newImage },
-                completion: nil)
-            
-            //SAVING-
-            //UIImageWriteToSavedPhotosAlbum(newImage!,nil,nil,nil)
-            
-            
+
+            // Save the Photo
+            UIImageWriteToSavedPhotosAlbum(image,nil,nil,nil)
         }
-        
+    }
+    
+    @IBAction func cropButtonPressed(_ sender: Any) {
+        if let image = imageView.image {
+            
+            let newImage = image.addBorderToImage()
+            // newImage is the old image with added whitespace
+            
+            // animate the transition
+            UIView.transition(with: self.imageView,
+                              duration: 0.5,
+                              options: .transitionCrossDissolve,
+                              animations: { self.imageView.image = newImage },
+                              completion: nil)
+        }
     }
     
     @IBAction func uploadButtonPressed(_ sender: Any) {
